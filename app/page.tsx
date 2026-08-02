@@ -13,9 +13,7 @@ import Image from "next/image"
 import { RaceDayCountdown } from "@/components/race-day-countdown"
 import { InteractiveSchedule } from "@/components/interactive-schedule"
 import { HistoricalResultsAccordion } from "@/components/historical-results-accordion"
-import dynamic from "next/dynamic"
 
-const Footer = dynamic(() => import("@/components/footer"), { ssr: false })
 
 export default function Home() {
   return (
@@ -62,7 +60,6 @@ export default function Home() {
         <HistoricalResultsAccordion />
 
         <SocialSection />
-        <Footer />
       </div>
     </main>
   )
