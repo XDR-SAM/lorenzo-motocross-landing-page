@@ -2,7 +2,6 @@
 
 import { useRef, useState, useEffect } from "react"
 import { motion, useScroll, useTransform, useSpring } from "framer-motion"
-import InteractivePortrait from "./interactive-portrait"
 import SignatureMarqueeSection from "./signature-marquee-section"
 
 export default function HeroSection() {
@@ -67,7 +66,7 @@ export default function HeroSection() {
             opacity: exitOpacity,
           }}
         >
-          {isReady && <InteractivePortrait />}
+          <img src="/images/inspired-by-lando-norris.png" alt="Inspired by Lorenzo" className="relative z-10 max-w-[300px] w-full h-auto pointer-events-none" />
         </motion.div>
       </div>
     </section>
